@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine learning API</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="'stylesheet" type="test/css">
+    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="'stylesheet" type="test/css">
+    <link href="https://fonts.googleapis.com/css?family=Hind:300" rel="'stylesheet" type="test/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300"  rel="" rel="'stylesheet" type="test/css">
+</head>
+
+
+<body>
+    <div class="login">
+        <h1>Predict Credit Card</h1>
+
+        <!-- Main Input for Receiving Query to our ML-->
+        <form action="{{url_for('predict')}}"" method="post">
+            <input type="text" name="RowNumber" placeholder="Row Number" required="required"/>
+            <input type="text" name="CustomerId" placeholder="CustomerId" required="required"/>
+            <input type="text" name="CreditScore" placeholder="Credit Score" required="required"/>
+            <input type="text" name="Age" placeholder="Age" required="required"/>
+            <input type="text" name="Tenure" placeholder="Tenure" required="required"/>
+            <input type="text" name="Balance" placeholder="Balance" required="required"/>
+            <input type="text" name="NumOfProducts" placeholder="Number Of Products" required="required"/>
+            <input type="text" name="HasCrCard" placeholder="Has bCredit Card" required="required"/>
+            <input type="text" name="IsActiveMember" placeholder="Is Active Member" required="required"/>
+            <input type="text" name="EstimatedSalary" placeholder="Estimated SalaryRow Number" required="required"/>
+            <input type="text" name="Exited" placeholder="Exited" required="required"/>
+            
+
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+ 
+        </form>
+    </div>
+    
+</body>
+
+
+</html>
